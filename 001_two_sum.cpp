@@ -13,3 +13,7 @@ public:
         }
     }
 };
+
+//best sample
+//use a unordered_map to store used number. so only o(n) is necessary.
+//insert to unordered_map or map is o(log(n))

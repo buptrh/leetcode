@@ -1,2 +1,2 @@
 Notes:
-1. <unordered_map> is faster.
+1. insert and search from <unordered_map> is o(log(n)).

@@ -30,3 +30,7 @@ public:
         }
     }
 };
+
+//the median is used for dividing a set into two equal length subsets, that one subset is always greater than the other
+//use binary search instead of traversal
+//j = (sum1 + sum2 + 1) / 2 - i, so use binary search to search in nums1
