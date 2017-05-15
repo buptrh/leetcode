@@ -16,3 +16,4 @@ public:
 
 //100 3 100 8 1 4 2 8
 //remember to use max and min
+//minBuy = min(price[i], minbuy)
