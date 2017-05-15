@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
     	std::vector<std::vector<int>> vRet;
-    	sort(nums.begin(), nums.end())
+    	sort(nums.begin(), nums.end());
         for(int i = 0; i < nums.size(); i++) {
         	int target = 0 - nums[i];
         	int front = i + 1 , end = nums.size()-1;
@@ -11,7 +11,7 @@ public:
         		if(sum < target) {
         			front++;
         		} else if(sum > target) {
-        			front--;
+        			end--;
         		} else {
         			vector<int> vec(3,0);
         			vec[0] = nums[i];

@@ -14,3 +14,6 @@ public:
         return nums.size() - length;
      }
 };
+
+
+//better answer: if length is the items != val, we don't need nums[i] == val;

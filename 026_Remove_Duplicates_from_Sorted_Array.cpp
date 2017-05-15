@@ -20,3 +20,5 @@ public:
         return length;
     }
 };
+
+//don't erase. just copy to first length items.
