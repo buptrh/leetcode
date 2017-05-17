@@ -11,4 +11,11 @@ lexicographically 字典顺序
 ascending 上升
 logarithmic 对数的
 equivalent 当量 等价物
-
+ascend 上升 登 (ascending order 升序排列)
+pivot 枢
+elevation 海拔
+Exclusive or 异或
+contiguous 邻近的
+Meanwhile 与此同时
+constraint 约束
+Palindromic 回文
