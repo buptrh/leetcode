@@ -23,3 +23,4 @@ alphanumeric 字母和数字.  consisting of or using both letters and numerals.
 product 乘积
 singly linked list 单链表
 infrastructure 系统架构 == architecture
+interval 间隔
