@@ -7,13 +7,29 @@ Notes:
 3. std::unique moves items duplicated to array end, and returns new end iterator.
 4. !!! unordered_set and hashset
 5. string.find_first_not_of("0")
+6. priority_queue
+	1)	struct cmp{
+		    bool operator() ( Node a, Node b ){
+		        if( a.x== b.x ) return a.y> b.y;
+		         
+		        return a.x> b.x; 
+		    }
+		};
+		priority_queue<Node, vector<Node>, cmp> q;  
 
+	Or
+	2)	auto comp = [&nums1, &nums2](pair<int, int> a, pair<int, int> b) {
+		    return nums1[a.first] + nums2[a.second] > nums1[b.first] + nums2[b.second];
+		};
+		priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(comp)> queue(comp);
+	3)	use emplace() instead of push. (not only for priority_queue, also for vector)
 
 
 Todo:
 1. chinese doc finished reading 026
 2. need to research on 33. Search in Rotated Sorted Array about ^ (Exclusive or)
-
+3. study heap sort.
+4. binary coculation: #371
 
 Questions:
 1.
@@ -23,7 +39,7 @@ Questions:
           return n;
     }
     why n can be array size?
-
+    //in current version of c++(c++11), array size can be variable
 Document:
 1. Dynamic Programming(dp): http://www.hawstein.com/posts/dp-novice-to-advanced.html
 2. Manacher's Algorithm 马拉车算法 o(n)回文字符串. Longest Palindromic Substring

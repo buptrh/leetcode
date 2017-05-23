@@ -24,3 +24,5 @@ product 乘积
 singly linked list 单链表
 infrastructure 系统架构 == architecture
 interval 间隔
+continent 大陆
+unrevealed 还没揭露
