@@ -23,6 +23,7 @@ Notes:
 		};
 		priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(comp)> queue(comp);
 	3)	use emplace() instead of push. (not only for priority_queue, also for vector)
+7. stack sort
 
 
 Todo:

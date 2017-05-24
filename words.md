@@ -26,3 +26,4 @@ infrastructure 系统架构 == architecture
 interval 间隔
 continent 大陆
 unrevealed 还没揭露
+conquer 征服
