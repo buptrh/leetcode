@@ -10,6 +10,8 @@
 // All the input integers are in the range [-10000, 10000].
 // A valid square has four equal sides with positive length and four equal angles (90-degree angles).
 // Input points have no order.
+
+//solution in contest!s
 class Solution {
 public:
     bool validSquare(vector<int>& p1, vector<int>& p2, vector<int>& p3, vector<int>& p4) {
@@ -47,3 +49,6 @@ public:
         return false;
     }
 };
+
+
+

@@ -10,7 +10,7 @@
 
 // Discuss
 
-
+// Solution in contest!
 class Solution {
 public:
     int findLHS(vector<int>& nums) {
@@ -37,6 +37,26 @@ public:
         for(int i = 0; i < nums.size(); i++) {
             if(big[i] != 0 || sma[i] != 0) {
                 maxValue = max(maxValue, max(big[i], sma[i]) + equ[i] );
+            }
+        }
+        return maxValue;
+    }
+};
+
+
+
+// Solution in review
+class Solution {
+public:
+    int findLHS(vector<int>& nums) {
+        unordered_map<int, int> numMap;
+        for(int i = 0; i < nums.size(); i++) {
+            numMap[nums[i]]++;
+        }
+        int maxValue = 0;
+        for(int i = 0; i < nums.size(); i++) {
+            if(numMap[nums[i]-1] != 0 || numMap[nums[i]+1] != 0) {
+                maxValue = max(maxValue, max(numMap[nums[i]-1], numMap[nums[i]+1]) + numMap[nums[i]] );
             }
         }
         return maxValue;

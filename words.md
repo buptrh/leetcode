@@ -27,3 +27,10 @@ interval 间隔
 continent 大陆
 unrevealed 还没揭露
 conquer 征服
+prerequisite 先决条件
+topological 拓扑
+designate 指定
+trivial 不重要的
+ syllabus 教学大纲
+ “ For me, great algorithms are the poetry of computation. Just like verse, they can be terse, allusive, dense, and even mysterious. But once unlocked, they cast a brilliant new light on some aspect of computing. ”
+ “对我来说，伟大的算法是计算的诗歌。就像诗他们可以简洁，幽默，密集，甚至神秘。但是，一旦解锁，他们就会在某些方面投入光辉计算方面。

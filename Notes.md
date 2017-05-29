@@ -24,6 +24,8 @@ Notes:
 		priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(comp)> queue(comp);
 	3)	use emplace() instead of push. (not only for priority_queue, also for vector)
 7. stack sort
+8. topological sort 拓扑排序
+9. unordered_set can remove duplicated items
 
 
 Todo:
@@ -31,6 +33,12 @@ Todo:
 2. need to research on 33. Search in Rotated Sorted Array about ^ (Exclusive or)
 3. study heap sort.
 4. binary coculation: #371
+5. 线段树 http://blog.jobbole.com/98591/
+6. stack sort 自己写个小根堆，然后不断插入维护他
+7. 215 didn't finish successfully!
+8. k biggest number: http://blog.csdn.net/xiaoding133/article/details/8037086
+9. https://leetcode.com/problems/surrounded-regions/#/solutions Union-Find
+
 
 Questions:
 1.

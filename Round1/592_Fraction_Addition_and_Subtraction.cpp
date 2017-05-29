@@ -38,32 +38,50 @@ public:
                 break;
             }
             elems.push_back(s.substr(pos, find_pos - pos));
-            pos = find_pos + delim_len;a
+            pos = find_pos + delim_len;
         }
-        elems.push_back(s.substr(pos, len-pos));
+        // elems.push_back(s.substr(pos, len-pos));
         return elems;
     }
       
-string&   replace_all(string&   str,const   string&   old_value,const   string&   new_value)     
-{     
-    int pp = 0;
-    while(true)   {     
-        string::size_type   pos(0);     
-        if(   (pos=str.find(old_value))!=string::npos && pos > pp   ) {   
-            pp = pos;
-            str.replace(pos,old_value.length(),new_value);    
+    string&   replace_all(string&   str,const   string&   old_value,const   string&   new_value)     
+    {     
+        int   pos = 0;     
+        while(true)   {     
+            pos=str.find(old_value, pos);
+            if( pos >= 0  ) {   
+                str.replace(pos,old_value.length(),new_value);    
+            } else {
+                break; 
+            }    
+            pos += old_value.length() + 1;
+        }     
+        return   str;     
+    }
+
+    int maximumCommonDevisor(int a, int b) {
+        int ret = 0;
+        while(a != 0) {
+            if(b <= 0) {
+                b = -b;
+            }
+            if(a <= 0) {
+                a = -a;
+            }
+            b = b % a;
+            ret = a;
+            swap(a, b);
         }
-        else   break;     
-    }     
-    return   str;     
-}     
+        return ret;
+    }
+
     string fractionAddition(string expression) {
         expression = replace_all(expression, "-", "+-");
-    	cout<<expression<<endl;
+    	// cout<<expression<<endl;
         int a = 0, b = 1;
         vector<string> words = split(expression, "+");
         bool minus = false;
-        cout<<"~~" << words.size() << endl;
+        // cout<<"~~" << words.size() << "  " << words[0] << "  " << words[1] << " " << words[2] <<endl;
         for(int i = 0; i < words.size(); i++ ) {
             if(words[i][0] == '-') {
                 minus = true;
@@ -71,15 +89,35 @@ string&   replace_all(string&   str,const   string&   old_value,const   string& 
                 minus = false;
             }
             vector<string> letters = split(words[i], "/");
+            if(letters.size() < 2 ) {
+                continue;
+            }
             
             int num1 = std::atoi(letters[0].c_str() );
             int num2 = std::atoi(letters[1].c_str() );
-        cout<<"!!!"<<a<<"  " << b <<" "<<num1 << "  " << num2<<endl;
+        // cout<<"!!!"<<a<<"  " << b <<" "<<num1 << "  " << num2<<endl;
             a = a * num2 + num1 * b;
             b = b * num2;
         }
-        cout<<a<<"  " << b <<endl;
+        // cout<<"final" << a<<"  " << b <<endl;
+        int devisor = maximumCommonDevisor(a, b);
+        if(devisor != 0) {
+            a = a / devisor;
+            b = b / devisor;
+        } else {
+            a = 0; b = 1;
+        }
         string ret = "";
+        minus = false;
+        if(a != 0 && a / abs(a) != b / abs(b) ) {
+            minus = true;
+        }
+
+        if(minus) {
+            ret = "-";
+        }
+        ret = ret + to_string(abs(a)) + "/" + to_string(abs(b));
+        // std::sprintf(ret, "%s%d/%d", ret, abs(a), abs(b));
         return ret;
     }
 };
