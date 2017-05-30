@@ -26,6 +26,8 @@ Notes:
 7. stack sort
 8. topological sort 拓扑排序
 9. unordered_set can remove duplicated items
+10. Moore voting algorithm. to solve majority item in array.
+11. in current version of c++(c++11), array size can be variable
 
 
 Todo:
@@ -41,14 +43,16 @@ Todo:
 
 
 Questions:
-1.
-    int longestPalindromeSubseq(string s) {
-        const int n = s.size();
-          bool f[n][n];
-          return n;
-    }
-    why n can be array size?
-    //in current version of c++(c++11), array size can be variable
+
 Document:
 1. Dynamic Programming(dp): http://www.hawstein.com/posts/dp-novice-to-advanced.html
 2. Manacher's Algorithm 马拉车算法 o(n)回文字符串. Longest Palindromic Substring
+
+
+
+
+
+
+
+
+
