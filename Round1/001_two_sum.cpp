@@ -1,3 +1,4 @@
+#include "includes.h"
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -13,6 +14,11 @@ public:
         }
     }
 };
+
+int main() {
+    cout<<"test"<<endl;
+    return 0;
+}
 
 //best sample
 //use a unordered_map to store used number. so only o(n) is necessary.
