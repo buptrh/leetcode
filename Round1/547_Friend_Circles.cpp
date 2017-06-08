@@ -41,3 +41,6 @@ public:
         return ret;
     }
 };
+
+//could be quicker. because if i is visited, in this solution still need to go j.
+// better solution is to define a visited array to record if a person is visited.
