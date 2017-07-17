@@ -53,7 +53,17 @@ Notes:
 	d -> 2,5
 	e -> 4
 	After you pick a, and b, c will be picked, and index is 3. Now if you have to pick d, you can't pick index 2 because c was picked at 3, so you have to binary search for index which comes after 3. So it returns 5.
-
+24. 
+    vector<string> split(string t, char sp) {
+        vector<string> words;
+        istringstream iss(t);
+        string s;
+        while (getline(iss, s, sp)) {
+            words.push_back(s);
+        }
+        return words;
+    }
+    
 Todo:
 1. chinese doc finished reading 026
 2. need to research on #33. Search in Rotated Sorted Array about ^ (Exclusive or)
@@ -74,6 +84,8 @@ Todo:
 16. Newton Method  to calculate sqrt
 17. 要自己实现一个二叉搜索树
 18. #300 - Longest Increasing Subscence: http://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/
+19. #28 - Implement strStr(): http://www.geeksforgeeks.org/searching-for-patterns-set-2-kmp-algorithm/
+20. substring template: https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems
 
 Questions:
 
@@ -84,6 +96,7 @@ Document:
 
 不会做看了答案的:
 630
+287
 
 
 
