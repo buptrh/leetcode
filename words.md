@@ -46,7 +46,7 @@ citations 引用
 intervening 介于中间的
 concatenation 一系列相互关联的事物
 vowels 元音
-
+itinerary 旅程 路线
 
 
 
