@@ -25,8 +25,18 @@ public:
     	if(s.size() <= 1) {
     		return s.size();
     	}
-    	
-    	return ret;
+    	vector<vector<int>> dp(s.size(), vector<int>(s.size(), 0));
+    	for(int i = s.size()-1; i >= 0; i--) {
+    		for(int j = i; j < s.size(); j++) {
+    			dp[i][j] = (i==j) ? 1 : 1 + dp[i+1][j];
+    			for(int k = i+1; k <= j; k++) {
+    				if(s[i] == s[k]) {
+    					dp[i][j] = min(dp[i][j], dp[i+1][k-1] + dp[k][j] );
+    				}
+    			}
+    		}
+    	}
+    	return dp[0][s.size()-1];
 
 
     }
