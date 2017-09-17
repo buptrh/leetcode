@@ -86,6 +86,7 @@ Todo:
 18. #300 - Longest Increasing Subscence: http://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/
 19. #28 - Implement strStr(): http://www.geeksforgeeks.org/searching-for-patterns-set-2-kmp-algorithm/
 20. substring template: https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems
+21. !!! Hashtable原理和collision
 
 Questions:
 
