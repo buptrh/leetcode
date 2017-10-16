@@ -11,12 +11,10 @@ Notes:
 	1)	struct cmp{
 		    bool operator() ( Node a, Node b ){
 		        if( a.x== b.x ) return a.y> b.y;
-		         
 		        return a.x> b.x; 
 		    }
 		};
 		priority_queue<Node, vector<Node>, cmp> q;  
-
 	Or
 	2)	auto comp = [&nums1, &nums2](pair<int, int> a, pair<int, int> b) {
 		    return nums1[a.first] + nums2[a.second] > nums1[b.first] + nums2[b.second];
@@ -63,6 +61,11 @@ Notes:
         }
         return words;
     }
+25. union find. 普林斯顿的老爷子 第一章permutatuon
+	int findfa(int x) {
+	 return fa[x] == x ? x : fa[x] = findfa(fa[x]);
+	}
+
     
 Todo:
 1. chinese doc finished reading 026
@@ -87,6 +90,7 @@ Todo:
 19. #28 - Implement strStr(): http://www.geeksforgeeks.org/searching-for-patterns-set-2-kmp-algorithm/
 20. substring template: https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems
 21. !!! Hashtable原理和collision
+22. !!! Union Find and graph
 
 Questions:
 
@@ -103,6 +107,7 @@ Document:
 389 位运算
 391
 664
+684
 
 
 

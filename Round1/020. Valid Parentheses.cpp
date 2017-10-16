@@ -1,4 +1,4 @@
-class Solution {
+3class Solution {
 public:
     bool isValid(string s) {
         char left[3] = {'(', '{', '['};
