@@ -83,7 +83,7 @@ Todo:
 13. 分治+树状数组 https://nanti.jisuanke.com/t/15771。http://paste.ubuntu.com/24781473/ 单调栈。http://paste.ubuntu.com/24772063/ 分治+树状数组
 14. RMQ（Range Minimum/Maximum Query），即区间最值查询. http://blog.csdn.net/liang5630/article/details/7917702
 	动态规划：设A[i]是要求区间最值的数列，F[i, j]表示从第i个数起连续2^j个数中的最大值。（DP的状态）
-15.！！！！MIT的那本intro to algorithm
+15. ！！！！MIT的那本intro to algorithm
 16. Newton Method  to calculate sqrt
 17. 要自己实现一个二叉搜索树
 18. #300 - Longest Increasing Subscence: http://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/
@@ -91,6 +91,11 @@ Todo:
 20. substring template: https://discuss.leetcode.com/topic/30941/here-is-a-10-line-template-that-can-solve-most-substring-problems
 21. !!! Hashtable原理和collision
 22. !!! Union Find and graph
+23. Trie树
+24. Prefix tree
+25. binary index tree
+26. 最短路径算法 dja什么算法
+27. segment tree
 
 Questions:
 
