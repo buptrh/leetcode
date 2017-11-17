@@ -19,6 +19,11 @@ Notes:
 	2)	auto comp = [&nums1, &nums2](pair<int, int> a, pair<int, int> b) {
 		    return nums1[a.first] + nums2[a.second] > nums1[b.first] + nums2[b.second];
 		};
+
+		auto comp = [](int a, int b) {
+		    return a<b;
+		};
+		对sort是升序，对priority_queue是大根堆
 		priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(comp)> queue(comp);
 	3)	use emplace() instead of push. (not only for priority_queue, also for vector)
 7. stack sort
