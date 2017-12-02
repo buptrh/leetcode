@@ -7,3 +7,5 @@
 7. LIS
 8. bucket sort, radix sort, counting sort
 9. binary index tree
+10. 智能指针
+
