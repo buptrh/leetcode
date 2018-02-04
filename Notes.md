@@ -70,7 +70,7 @@ Notes:
 	int findfa(int x) {
 	 return fa[x] == x ? x : fa[x] = findfa(fa[x]);
 	}
-
+26. union find 模板 305. Number of Islands II.cpp
     
 Todo:
 1. chinese doc finished reading 026

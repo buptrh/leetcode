@@ -1,11 +1,6 @@
-#include <iostream>
-using namespace std;
-
-// To execute C++, please define "int main()"
-int main() {
-  auto words = { "Hello, ", "World!", "\n" };
-  for (const string& word : words) {
-    cout << word;
-  }
-  return 0;
+for(w in words) {
+	mapArticle[w]--;
+	if(mapArticle[w]<0) {
+		return false;
+	}
 }

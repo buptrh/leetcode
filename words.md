@@ -50,4 +50,33 @@ itinerary 旅程 路线
 Parentheses 括号
 
 
+derived 派生
+polymorphic 多态
+implicitly 隐式
+instantiated 实例化
+inherite 继承
+purely virtual methods 纯虚函数
+mutex 互斥
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
