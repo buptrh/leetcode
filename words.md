@@ -61,7 +61,19 @@ mutex 互斥
 
 
 
-
+[] bracket
+{} curly bracket
+;  semi-colon (delimiter)
+:  colon
+"" quote (formally double quote)
+'' single quote
+\  backslash
+/  slash (formally foward slash)
+| pipe
+~ tilda
+^ carret
+() paranthesis
+` back tick
 
 
 
